@@ -1,0 +1,22 @@
+{
+  "name": "subway-mod-patcher",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@wakaru/cli": "^0.0.10",
+    "esast-util-from-js": "^2.0.1",
+    "estree-util-to-js": "^2.0.0",
+    "obfuscator-io-deobfuscator": "^1.0.6"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.28.4"
+  }
+}

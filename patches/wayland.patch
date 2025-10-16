@@ -1,0 +1,12 @@
+diff --git a/./tmp/app-image/metro-maker4.desktop b/./tmp/app-image/metro-maker4-new.desktop
+index 2af9024..10e295d 100644
+--- a/./tmp/app-image/metro-maker4.desktop
++++ b/./tmp/app-image/metro-maker4-new.desktop
+@@ -1,6 +1,6 @@
+ [Desktop Entry]
+ Name=Subway Builder
+-Exec=AppRun --no-sandbox %U
++Exec=AppRun --no-sandbox %U --enable-features=UseOzonePlatform --ozone-platform=wayland
+ Terminal=false
+ Type=Application
+ Icon=metro-maker4

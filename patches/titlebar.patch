@@ -1,0 +1,13 @@
+diff --git a/./tmp/asar-extract/dist/main/main.js b/./tmp/asar-extract/dist/main/main-new.js
+index 5153e14..bd08936 100644
+--- a/./tmp/asar-extract/dist/main/main.js
++++ b/./tmp/asar-extract/dist/main/main-new.js
+@@ -16123,7 +16123,7 @@ const devServerUrl = "http://localhost:3000", productionUrl = "file://" + _0x26c
+ electron.protocol["registerSchemesAsPrivileged"]([{ "scheme": "app", "privileges": { "secure": !![], "standard": !![], "supportFetchAPI": !![], "corsEnabled": !![] } }, { "scheme": "map", "privileges": { "supportFetchAPI": !![], "stream": !![] } }]);
+ async function createWindow() {
+   console["log"]("Creating window...");
+-  const { width: _0x4fc7cb, height: _0x2c3935 } = electron.screen["getPrimaryDisplay"]()["workAreaSize"], _0x161d16 = new electron.BrowserWindow({ "width": _0x4fc7cb, "height": _0x2c3935, "fullscreen": ![], "fullscreenable": !![], "webPreferences": { "nodeIntegration": ![], "contextIsolation": !![], "enableRemoteModule": ![], "webSecurity": ![], "preload": _0x26cffd["join"](__dirname$1, "../preload/preload.js"), "backgroundThrottling": ![], "webgl": !![], "acceleratedGraphics": !![], "spellcheck": ![], "experimentalFeatures": ![], "allowRunningInsecureContent": !![] }, "icon": getAppIcon(), "show": !![], "title": "Subway Builder", "name": "Subway Builder", "paintWhenInitiallyHidden": ![] }), _0x2e7525 = isDev ? devServerUrl : productionUrl;
++  const { width: _0x4fc7cb, height: _0x2c3935 } = electron.screen["getPrimaryDisplay"]()["workAreaSize"], _0x161d16 = new electron.BrowserWindow({ "width": _0x4fc7cb, "height": _0x2c3935, "fullscreen": ![], "fullscreenable": !![], "webPreferences": { "nodeIntegration": ![], "contextIsolation": !![], "enableRemoteModule": ![], "webSecurity": ![], "preload": _0x26cffd["join"](__dirname$1, "../preload/preload.js"), "backgroundThrottling": ![], "webgl": !![], "acceleratedGraphics": !![], "spellcheck": ![], "experimentalFeatures": ![], "allowRunningInsecureContent": !![] }, "icon": getAppIcon(), "show": !![], "title": "Subway Builder", "name": "Subway Builder", "paintWhenInitiallyHidden": ![], "titleBarStyle": "hidden" }), _0x2e7525 = isDev ? devServerUrl : productionUrl;
+   console["log"]("Loading URL:", _0x2e7525);
+   if (isDev) _0x161d16["loadURL"](_0x2e7525);
+   else {
