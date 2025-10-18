@@ -1,3 +1,6 @@
 echo "Extracting game files"
-7z x ~/AppImages/subway_builder.appimage -o./tmp/app-image
+cd ./tmp
+~/AppImages/subway_builder.appimage --appimage-extract
+mv squashfs-root app-image
+cd ../
 asar extract tmp/app-image/resources/app.asar tmp/asar-extract/
