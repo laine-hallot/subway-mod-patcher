@@ -11,6 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@electron/asar": "^4.0.1",
     "@wakaru/cli": "^0.0.10",
     "esast-util-from-js": "^2.0.1",
     "estree-util-to-js": "^2.0.0",
