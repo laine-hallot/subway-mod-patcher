@@ -1,0 +1,7 @@
+{
+  "$schema": "../../configSchema.json",
+  "patchName": "Wayland",
+  "gameVersion": "0.73.0",
+  "applyPatch": "patch -p1 tmp/app-image/metro-maker4.desktop ./patches/wayland.patch",
+  "workingDir": "./"
+}

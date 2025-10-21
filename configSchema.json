@@ -1,0 +1,29 @@
+{
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Subway Mod Patcher JSON schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Pointer to the schema against which this document should be validated."
+    },
+    "patchName": {
+      "type": "string",
+      "description": "A pretty name for your patch"
+    },
+    "gameVersion": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$",
+      "description": "Game version this patch was generated for"
+    },
+    "applyPatch": {
+      "type": "string",
+      "description": "Shell command that should be run in order to apply patch"
+    },
+    "workingDir":{
+      "type": "string",
+      "description": "The directory that Subway Mod Patcher should be looking at while it runs `apply-patch` (undefined = ./patches/YOUR_PATCH_DIR)"
+    }
+  }
+}

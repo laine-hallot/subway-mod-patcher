@@ -1,0 +1,7 @@
+{
+  "$schema": "../../configSchema.json",
+  "patchName": "Hide Titlebar",
+  "gameVersion": "0.73.0",
+  "applyPatch": "patch -p1 tmp/asar-extract/dist/main/main.js ./patches/titlebar.patch",
+  "workingDir": "./"
+}
